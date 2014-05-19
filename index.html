@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Inheritance</title>
+	</head>
+	<body>
+		<div id="container-fluid">
+
+		</div>
+		<script type="text/javascript" src="person.js"></script>
+		<script type="text/javascript" src="engineer.js"></script>
+		<script type="text/javascript" src="group.js"></script>
+		<script type="text/javascript">
+			var g = new Group('superheros');
+			g.addPerson('batman', 'crime-fighting', 1, 2);
+			g.addPerson('robin', 'batmans-sidekick', 4);
+			g.addPerson('superman', 'flying', 0, 3);
+			g.addPerson('catwoman', 'purring');
+
+			console.log('members: '+ g.getMembers());
+			console.log('total limbs: '+ g.countTotalLimbs());
+		</script>
+	</body>
+</html>
